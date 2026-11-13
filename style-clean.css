@@ -270,11 +270,14 @@
   object-fit: cover !important;
 }
 
+
+/* Suppression du grand bloc blanc commun */
 .rlLua > div.carteLua {
   display: grid !important;
   grid-template-columns: 220px minmax(0,1fr) !important;
   grid-template-rows: 350px !important;
-  gap: 18px !important;
+  column-gap: 18px !important;
+  row-gap: 0 !important;
   width: 100% !important;
   height: 350px !important;
   min-height: 350px !important;
@@ -282,11 +285,16 @@
   padding: 0 !important;
   margin: 0 !important;
   background: transparent !important;
-  align-items: start !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
   box-sizing: border-box !important;
+  align-items: start !important;
 }
 
-.avatarWrap {
+/* Avatar indépendant */
+.rlLua > div.carteLua > .avatarWrap {
+  display: block !important;
   width: 220px !important;
   height: 350px !important;
   padding: 0 !important;
@@ -294,9 +302,16 @@
   background: transparent !important;
 }
 
-.midcatLua {
+/* Bloc d'informations indépendant */
+.rlLua > div.carteLua > .midcatLua {
+  display: block !important;
+  width: 100% !important;
+  height: 350px !important;
+  min-height: 350px !important;
+  max-height: 350px !important;
+  padding: 18px !important;
+  margin: 0 !important;
   background: #fff !important;
   border-radius: 10px !important;
-  padding: 18px !important;
   box-sizing: border-box !important;
 }
