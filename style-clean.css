@@ -270,24 +270,33 @@
   object-fit: cover !important;
 }
 
-div.rlLua > div.carteLua {
-  padding: 0 !important;
-  margin: 0 !important;
+.rlLua > div.carteLua {
   display: grid !important;
   grid-template-columns: 220px minmax(0,1fr) !important;
+  grid-template-rows: 350px !important;
   gap: 18px !important;
+  width: 100% !important;
+  height: 350px !important;
+  min-height: 350px !important;
+  max-height: 350px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  align-items: start !important;
   box-sizing: border-box !important;
 }
 
-div.rlLua > div.carteLua > .avatarWrap {
+.avatarWrap {
   width: 220px !important;
   height: 350px !important;
   padding: 0 !important;
   margin: 0 !important;
+  background: transparent !important;
 }
 
-div.rlLua > div.carteLua > .avatarWrap img {
-  width: 220px !important;
-  height: 350px !important;
-  object-fit: cover !important;
+.midcatLua {
+  background: #fff !important;
+  border-radius: 10px !important;
+  padding: 18px !important;
+  box-sizing: border-box !important;
 }
