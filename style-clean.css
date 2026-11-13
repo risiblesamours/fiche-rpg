@@ -29,14 +29,12 @@
   box-sizing: border-box;
 }
 
-/* FOND */
 .imgLua {
   background-image: url(https://2img.net/i.imgur.com/dGRcHPq.png);
   background-size: cover;
   background-position: center;
 }
 
-/* TITRE ET HISTOIRE UNIQUEMENT */
 .rlLua > .enttLua,
 .rlLua > .resmLua {
   border-radius: 10px;
@@ -45,21 +43,20 @@
   display: flex;
   align-items: center;
   padding: 18px;
+  box-sizing: border-box;
 }
 
-/* TITRE */
 .rlLua > .enttLua {
   width: 100%;
   height: 100px;
   min-height: 100px;
   max-height: 100px;
   padding: 12px 18px;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  box-sizing: border-box;
   text-align: center;
 }
 
@@ -80,7 +77,6 @@
 
 .citationLua {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -100,13 +96,12 @@
   background: var(--coloLua);
 }
 
-/* CONTENEUR TRANSPARENT DES DEUX BLOCS */
+/* AVATAR ET INFORMATIONS */
 .rlLua > .carteLua {
   display: grid !important;
   grid-template-columns: 220px minmax(0,1fr) !important;
   grid-template-rows: 350px !important;
   column-gap: 18px !important;
-  row-gap: 0 !important;
   width: 100% !important;
   height: 350px !important;
   min-height: 350px !important;
@@ -121,40 +116,36 @@
   align-items: start !important;
 }
 
-/* AVATAR INDÉPENDANT */
-.rlLua > .carteLua > .avatarWrap {
+/* AVATAR */
+.carteLua > span {
   display: block !important;
   grid-column: 1 !important;
   grid-row: 1 !important;
   width: 220px !important;
-  min-width: 220px !important;
-  max-width: 220px !important;
   height: 350px !important;
   min-height: 350px !important;
-  max-height: 350px !important;
   padding: 0 !important;
   margin: 0 !important;
   background: transparent !important;
   border-radius: 10px !important;
-  box-sizing: border-box;
   overflow: hidden !important;
 }
 
-.avatarWrap img {
+.carteLua > span img {
   display: block !important;
   width: 220px !important;
+  height: 350px !important;
   min-width: 220px !important;
   max-width: 220px !important;
-  height: 350px !important;
   min-height: 350px !important;
   max-height: 350px !important;
   object-fit: cover !important;
-  border-radius: 10px;
+  border-radius: 10px !important;
   margin: 0 !important;
 }
 
-/* BLOC BLANC DES INFORMATIONS */
-.rlLua > .carteLua > .midcatLua {
+/* PANNEAU BLANC */
+.carteLua > .midcatLua {
   display: block !important;
   grid-column: 2 !important;
   grid-row: 1 !important;
@@ -168,7 +159,7 @@
   align-self: start !important;
   background: #fff !important;
   border-radius: 10px !important;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   overflow: auto;
 }
 
