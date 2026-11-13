@@ -4,7 +4,7 @@
 }
 
 .contLua {
-  width: 590px;
+  width: 590px !important;
   max-width: 100%;
   min-height: 300px;
   display: grid;
@@ -26,6 +26,7 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+  box-sizing: border-box;
 }
 
 .rlLua > div {
@@ -51,7 +52,7 @@
   min-height: 100px;
   max-height: 100px;
   padding: 12px 18px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -61,11 +62,9 @@
 }
 
 .enttLua {
-  font-family: Playfair Display, serif;
+  font-family: "Playfair Display", serif;
   font-size: 32px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
   text-transform: uppercase;
 }
 
@@ -75,15 +74,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.enttLua span img {
-  width: 130px;
-  height: 49px;
-  border-radius: 10px;
-  border: 1px solid var(--coloLua);
-  object-fit: cover;
-  margin: 0 8px;
 }
 
 .citationLua {
@@ -110,61 +100,74 @@
 
 /* AVATAR ET INFORMATIONS */
 .rlLua > .carteLua {
-  width: 100%;
-  height: 350px;
-  min-height: 350px;
-  max-height: 350px;
+  width: 100% !important;
+  height: 350px !important;
+  min-height: 350px !important;
+  max-height: 350px !important;
   display: grid !important;
-  grid-template-columns: 220px minmax(0,1fr);
-  grid-template-rows: 350px;
-  gap: 18px;
-  align-items: start;
-  padding: 0;
-  margin: 0;
-  background: none;
+  grid-template-columns: 220px minmax(0,1fr) !important;
+  grid-template-rows: 350px !important;
+  gap: 18px !important;
+  align-items: start !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: none !important;
   box-sizing: border-box;
 }
 
-.carteLua > span {
-  display: block;
-  width: 220px;
-  height: 350px;
-  padding: 0;
-  margin: 0;
-}
-
-.carteLua > span img {
-  display: block;
-  object-fit: cover;
-  width: 220px;
-  height: 350px;
-  border-radius: 10px;
-  margin: 0;
-}
-
-.midcatLua {
-  grid-row: 1;
-  grid-column: 2;
+.carteLua > .avatarWrap {
   display: block !important;
-  width: 100%;
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: 220px !important;
+  min-width: 220px !important;
+  max-width: 220px !important;
   height: 350px !important;
-  min-height: 0 !important;
+  min-height: 350px !important;
   max-height: 350px !important;
-  align-self: start;
-  background: #fff;
-  padding: 18px;
+  padding: 0 !important;
+  margin: 0 !important;
+  align-self: start !important;
+  background: none !important;
+  box-sizing: border-box;
+}
+
+.avatarWrap img {
+  display: block !important;
+  width: 220px !important;
+  min-width: 220px !important;
+  max-width: 220px !important;
+  height: 350px !important;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 !important;
+}
+
+.carteLua > .midcatLua {
+  display: block !important;
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 350px !important;
+  min-height: 350px !important;
+  max-height: 350px !important;
+  padding: 18px !important;
+  margin: 0 !important;
+  align-self: start !important;
+  background: #fff !important;
   border-radius: 10px;
   box-sizing: border-box;
   overflow: auto;
 }
 
 .midcatLua > div {
-  padding: 0;
+  padding: 0 !important;
   border-radius: 0;
   background: transparent;
   min-height: 0 !important;
   height: 100%;
-  display: block;
+  display: block !important;
 }
 
 .infosLua {
@@ -191,7 +194,7 @@
   border-radius: 0 !important;
   padding: 0 !important;
   color: var(--coloLua) !important;
-  font-family: Playfair Display, serif;
+  font-family: "Playfair Display", serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: lowercase;
@@ -210,7 +213,7 @@
 
 .resmLua span {
   display: inline-block;
-  font-family: Playfair Display, serif;
+  font-family: "Playfair Display", serif;
   font-size: 22px;
   line-height: 1.4;
   padding: 2px 0 4px;
