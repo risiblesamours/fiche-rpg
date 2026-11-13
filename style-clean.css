@@ -252,3 +252,20 @@
   text-align: justify;
   color: #555;
 }
+.avatarWrap {
+  width: 220px !important;
+  min-width: 220px !important;
+  max-width: 220px !important;
+  height: 350px !important;
+  overflow: hidden !important;
+}
+
+.avatarWrap img {
+  width: 220px !important;
+  min-width: 220px !important;
+  max-width: 220px !important;
+  height: 350px !important;
+  min-height: 350px !important;
+  max-height: 350px !important;
+  object-fit: cover !important;
+}
