@@ -101,14 +101,14 @@
 /* GRILLE AVATAR + ESPACE + INFORMATIONS */
 .rlLua > .carteLua {
   display: grid !important;
-  grid-template-columns: 220px 48px minmax(0,1fr) !important;
+  grid-template-columns: 220px 18px minmax(0,1fr) !important;
   grid-template-rows: 350px !important;
   width: 100% !important;
   height: 350px !important;
   min-height: 350px !important;
   max-height: 350px !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 10 !important;
+  margin: 10 !important;
   background: transparent !important;
   border: none !important;
   border-radius: 0 !important;
