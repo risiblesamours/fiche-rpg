@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --coloLua: #ff98c8;
+}
+
+.contLua {
+  width: 590px;
+  max-width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: Manrope, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contLua * { box-sizing: border-box; }
+
+.rlLua {
+  background: rgba(255,255,255,.7);
+  backdrop-filter: blur(10px);
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.enttLua {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg,#CEC0CF 0%,var(--coloLua) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carteLua {
+  display: grid;
+  grid-template-columns: 220px minmax(0,1fr);
+  gap: 18px;
+  height: 350px;
+}
+
+.avatarLua {
+  width: 220px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.midcatLua {
+  height: 350px;
+  min-width: 0;
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.infosLua {
+  padding: 30px 20px 15px;
+  font-size: 12px;
+  line-height: 1.9;
+  text-align: justify;
+  color: #555;
+}
+
+.infosLua span {
+  color: var(--coloLua);
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.histoireLua {
+  background: rgba(255,255,255,.9);
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.histoireLua h2 {
+  margin: 0 0 12px;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--coloLua);
+  border-bottom: 1px solid var(--coloLua);
+  padding-bottom: 8px;
+}
+
+.texteLua {
+  padding: 9px;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #555;
+}
