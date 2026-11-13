@@ -20,7 +20,7 @@
 }
 
 .rlLua {
-  background: #fff;
+  background: rgba(255,255,255,.7);
   backdrop-filter: blur(10px);
   padding: 18px;
   display: flex;
@@ -101,7 +101,7 @@
 /* GRILLE AVATAR + ESPACE + INFORMATIONS */
 .rlLua > .carteLua {
   display: grid !important;
-  grid-template-columns: 220px 18px minmax(0,1fr) !important;
+  grid-template-columns: 220px minmax(0,1fr) !important;
   grid-template-rows: 350px !important;
   width: 100% !important;
   height: 350px !important;
@@ -115,7 +115,7 @@
   box-shadow: none !important;
   box-sizing: border-box !important;
   align-items: start !important;
-  gap: 0 !important;
+  column-gap: 18px !important;
 }
 
 /* AVATAR */
