@@ -29,12 +29,14 @@
   box-sizing: border-box;
 }
 
+/* FOND */
 .imgLua {
   background-image: url(https://2img.net/i.imgur.com/dGRcHPq.png);
   background-size: cover;
   background-position: center;
 }
 
+/* TITRE ET HISTOIRE */
 .rlLua > .enttLua,
 .rlLua > .resmLua {
   border-radius: 10px;
@@ -46,6 +48,7 @@
   box-sizing: border-box;
 }
 
+/* TITRE */
 .rlLua > .enttLua {
   width: 100%;
   height: 100px;
@@ -96,12 +99,12 @@
   background: var(--coloLua);
 }
 
-/* AVATAR ET INFORMATIONS */
+/* CONTENEUR AVATAR + INFORMATIONS */
 .rlLua > .carteLua {
   display: grid !important;
-  grid-template-columns: 220px minmax(0,1fr) !important;
+  grid-template-columns: 238px minmax(0,1fr) !important;
   grid-template-rows: 350px !important;
-  column-gap: 18px !important;
+  column-gap: 0 !important;
   width: 100% !important;
   height: 350px !important;
   min-height: 350px !important;
@@ -122,21 +125,26 @@
   grid-column: 1 !important;
   grid-row: 1 !important;
   width: 220px !important;
+  min-width: 220px !important;
+  max-width: 220px !important;
   height: 350px !important;
   min-height: 350px !important;
+  max-height: 350px !important;
+  justify-self: start !important;
   padding: 0 !important;
   margin: 0 !important;
   background: transparent !important;
   border-radius: 10px !important;
   overflow: hidden !important;
+  box-sizing: border-box !important;
 }
 
 .carteLua > span img {
   display: block !important;
   width: 220px !important;
-  height: 350px !important;
   min-width: 220px !important;
   max-width: 220px !important;
+  height: 350px !important;
   min-height: 350px !important;
   max-height: 350px !important;
   object-fit: cover !important;
@@ -144,7 +152,7 @@
   margin: 0 !important;
 }
 
-/* PANNEAU BLANC */
+/* PANNEAU BLANC DES INFORMATIONS */
 .carteLua > .midcatLua {
   display: block !important;
   grid-column: 2 !important;
@@ -172,6 +180,7 @@
   display: block !important;
 }
 
+/* TEXTE DES INFORMATIONS */
 .infosLua {
   display: block;
   width: 100%;
@@ -242,6 +251,7 @@
   align-items: flex-start;
 }
 
+/* TEXTE HISTOIRE */
 .desrls {
   width: 100%;
   background: #fff;
