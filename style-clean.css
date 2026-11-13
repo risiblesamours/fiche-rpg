@@ -107,9 +107,9 @@
   height: 350px !important;
   min-height: 350px !important;
   max-height: 350px !important;
-  padding: 10 !important;
-  margin: 10 !important;
-  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: #ff0000 !important;
   border: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
