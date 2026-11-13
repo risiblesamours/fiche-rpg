@@ -131,7 +131,7 @@
   max-height: 350px !important;
   padding: 0 !important;
   margin: 0 !important;
-  background: #ff0000 !important;
+  background: transparent !important;
   border-radius: 10px !important;
   overflow: hidden !important;
   box-sizing: border-box !important;
@@ -261,16 +261,6 @@
   line-height: 1.8;
   text-align: justify;
   color: #555;
-}
-
-.rlLua .carteLua {
-  display: grid !important;
-  grid-template-columns: 220px 18px minmax(0, 1fr) !important;
-  gap: 0 !important;
-  padding: 0 !important;
-  background: transparent !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
 }
 
 .rlLua .carteLua > span {
